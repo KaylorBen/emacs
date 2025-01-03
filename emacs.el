@@ -56,7 +56,7 @@
             :config
             (global-evil-leader-mode t)
             (evil-leader/set-leader "<SPC>"))
-            (evil-leader/set-key "q" 'kill-emacs)
+            (evil-leader/set-key "q" 'kill-buffer)
 
       (use-package evil-org
             :ensure t
