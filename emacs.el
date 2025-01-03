@@ -21,6 +21,9 @@
 (add-to-list 'default-frame-alist '(font . "FiraCode Nerd Font Mono-42" ))
 (set-face-attribute 'default t :font "FiraCode Nerd Font Mono-42" )
 
+;; backup files
+(setq backup-directory-alist `(("." . "~/.cache/emacs/saves")))
+
 ;; org mode
 (use-package org
       :ensure t
