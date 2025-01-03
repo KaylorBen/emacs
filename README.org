@@ -1,0 +1,6 @@
+* Nix Emacs configuration
+- Nix flake builds emacs package exposed as defaultPackage
+- Built around Evil and Org mode
+** Plan
+I wrote up this short Emacs configuration in order to take notes for running
+TTRPG games w/t friends. Emacs is great for keeping campaign notes!
