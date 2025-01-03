@@ -44,12 +44,13 @@
             (with-eval-after-load 'org (global-org-modern-mode))))
 
 ;; evil mode
-(setq evil-want-C-u-scroll t
-      evil-want-C-u-delete t)
+(setq evil-want-C-u-scroll t)
+(setq evil-want-C-u-delete t)
 (use-package evil
       :ensure t
       :config
       (evil-mode 1)
+      (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up)
       (use-package evil-leader
             :ensure t
             :config
