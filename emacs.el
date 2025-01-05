@@ -33,6 +33,8 @@
       ;; Make Org mode work with files ending in .org
       (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
+      (setq org-image-actual-width nil)
+
       (use-package org-cliplink
             :ensure t
             :config
@@ -96,6 +98,9 @@
             "f r" 'fzf-recentf
             "f t" 'fzf-grep
             "f s" 'fzf-grep-in-dir)
+      (recentf-mode 1)
+      (setq recentf-max-menu-items 25)
+      (setq recentf-max-saved-items 25)
       (setq fzf/args "-x --color bw --print-query --margin=1,0 --no-hscroll"
             fzf/executable "fzf"
             fzf/git-grep-args "-i --line-number %s"
