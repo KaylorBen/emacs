@@ -23,7 +23,6 @@
           package = pkgs.emacs-git;
           extraEmacsPackages = epkgs: [
             pkgs.fzf
-            pkgs.texliveSmall
           ];
         });
       }

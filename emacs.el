@@ -43,7 +43,10 @@
       (use-package org-modern
             :ensure t
             :config
-            (with-eval-after-load 'org (global-org-modern-mode))))
+            (with-eval-after-load 'org (global-org-modern-mode)))
+
+      (use-package org-present
+            :ensure t))
 
 ;; evil mode
 (setq evil-want-C-u-scroll t)
