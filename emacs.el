@@ -55,6 +55,8 @@
       :ensure t
       :config
       (evil-mode 1)
+      (evil-define-key 'normal 'org-present-mode [right] 'org-present-next)
+      (evil-define-key 'normal 'org-present-mode [left] 'org-present-prev)
       (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up)
       (use-package evil-leader
             :ensure t
